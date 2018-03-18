@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/switchDarkgrey"
+    android:orientation="vertical"
+    tools:context="kr.co.switchnow.switch_now_client.SettingActivity">
+
+
+
+    <TextView
+        android:id="@+id/version_info_txt"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="12dp"
+        android:textColor="@color/switchLime"
+        android:layout_alignLeft="@+id/version_info"
+        android:text="버전정보"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/version_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="1.0.0."
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/version_info_txt"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/advanced_setting_txt"
+        android:layout_marginTop="36dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_info"
+        android:layout_width="120dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="12dp"
+        android:textColor="@color/switchLime"
+        android:layout_alignLeft="@+id/advanced_setting_time"
+        android:text="고급설정"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/advanced_setting_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="스위치 가동 시간"
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/advanced_setting_txt"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/advanced_setting_extension"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="스위치 종료/연장"
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/advanced_setting_time"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/customer_support_txt"
+        android:layout_marginTop="36dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/advanced_setting_extension"
+        android:layout_width="120dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="12dp"
+        android:textColor="@color/switchLime"
+        android:layout_alignLeft="@+id/terms_and_privacy"
+        android:text="고객지원"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/terms_and_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="이용약관"
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/customer_support_txt"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/customer_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="사용자 의견 보내기"
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/terms_and_privacy"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/customer_drop_out"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="스위치 탈퇴"
+        android:layout_marginTop="3dp"
+        android:drawableEnd="@drawable/next_page_indicator_adjust"
+        android:layout_below="@+id/customer_opinion"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

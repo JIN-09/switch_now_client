@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swpieToConversation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/switchDarkgrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kr.co.switchnow.switch_now_client.InteractionActivity"
+    tools:showIn="@layout/app_bar_interaction">
+
+
+    <TextView
+        android:id="@+id/revCounter_inter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/switchGrey"
+        android:textSize="34dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_inter"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="296dp"
+        android:layout_height="6.5dp"
+        android:layout_below="@+id/revCounter_inter"
+        android:layout_centerHorizontal="true"
+
+        android:progressDrawable="@drawable/custom_progressbar" />
+
+
+    <TextView
+        android:id="@+id/time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progress_bar_inter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/time_0"
+        android:textAlignment="center"
+        android:textColor="@color/switchGrey" />
+
+
+    <TextView
+        android:id="@+id/time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_end"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/time_end"
+        android:layout_marginRight="15dp"
+        android:text="00min."
+        android:textAlignment="center"
+        android:textColor="@color/switchGrey" />
+
+    <Space
+        android:id="@+id/blankspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar_inter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <ImageView
+        android:id="@+id/indicator_yellow"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/progress_bar_inter"
+        android:layout_toLeftOf="@+id/blankspace"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/page_indicator_yellow" />
+
+    <ImageView
+        android:id="@+id/indicator_grey"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/progress_bar_inter"
+        android:layout_toRightOf="@+id/blankspace"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/page_indocator_grey" />
+
+    <ListView
+        android:id="@+id/interaction_switchOn_listview"
+        android:paddingTop="19dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="19dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_height="480dp"
+        android:layout_below="@+id/indicator_grey"
+        android:background="@drawable/rounded"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="3.5sp"
+        />
+
+
+</RelativeLayout>

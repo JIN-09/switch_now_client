@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/switchDarkgrey"
+    android:orientation="vertical"
+    tools:context="kr.co.switchnow.switch_now_client.ExtensionActivity">
+
+
+    <TextView
+        android:id="@+id/exit_alarm_txt"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="12dp"
+        android:textColor="@color/switchLime"
+        android:layout_alignLeft="@+id/exit_setting_mode"
+        android:text="종료알람"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/exit_setting_mode"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="종료 전 알람"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/exit_alarm_txt"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/alarm_setting_trigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:track="@drawable/custom_switch_selector"
+        android:thumb="@drawable/custom_switch_thumb"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/exit_setting_mode"
+        android:layout_alignRight="@+id/exit_setting_mode"
+        android:layout_marginBottom="2dp"
+        />
+
+    <TextView
+        android:id="@+id/alarm_time_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="미리 알람"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/exit_setting_mode"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/time_alarm_min"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="min."
+        android:textColor="@color/black_main"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/alarm_time_setting"
+        android:layout_alignBaseline="@+id/alarm_time_setting"
+        />
+
+    <TextView
+    android:id="@+id/alarm_time_value"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NN"
+    android:textSize="21dp"
+    android:textColor="@color/black_main"
+    android:layout_marginRight="4dp"
+    android:layout_toLeftOf="@+id/time_alarm_min"
+    android:layout_alignBaseline="@+id/time_alarm_min"
+    />
+
+
+    <TextView
+        android:id="@+id/extension_setting_txt"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/alarm_time_setting"
+        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:textAlignment="textStart"
+        android:paddingLeft="12dp"
+        android:textColor="@color/switchLime"
+        android:layout_alignLeft="@+id/extension_setting_mode"
+        android:text="자동연장"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/extension_setting_mode"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="자동연장"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/extension_setting_txt"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/extension_setting_trigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:track="@drawable/custom_switch_selector"
+        android:thumb="@drawable/custom_switch_thumb"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/extension_setting_mode"
+        android:layout_alignRight="@+id/extension_setting_mode"
+        android:layout_marginBottom="2dp"
+        />
+
+    <TextView
+        android:id="@+id/extension_time_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/rounded"
+        android:textColor="@color/switchDarkgrey"
+        android:text="연장시간"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/extension_setting_mode"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/time_extension_min"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="min."
+        android:textColor="@color/black_main"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/extension_time_setting"
+        android:layout_alignBaseline="@+id/extension_time_setting"
+        />
+
+    <TextView
+        android:id="@+id/extension_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NN"
+        android:textSize="21dp"
+        android:textColor="@color/black_main"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/time_extension_min"
+        android:layout_alignBaseline="@+id/time_extension_min"
+        />
+
+</RelativeLayout>

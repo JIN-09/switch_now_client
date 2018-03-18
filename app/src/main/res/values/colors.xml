@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="switchLime">#dcfc08</color>
+    <color name="switchDarkgrey">#353535</color>
+    <color name="switchGrey">#f2f2f2</color>
+    <color name="white_main">#FFFFFF</color>
+    <color name="switchDarkgreyWithTrans">#CC353535</color>
+    <color name="black_main">#000000</color>
+
+    <color name="colorPrimary">#f2f2f2</color>
+    <color name="colorPrimaryDark">#353535</color>
+    <color name="colorAccent">#dcfc08</color>
+</resources>

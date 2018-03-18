@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/switchGrey"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_pic_selector_img"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dialog_pic_select"
+
+        />
+
+    <View
+        android:id="@+id/line_pic_selector"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_pic_selector_img"
+        android:layout_marginTop="5dp"
+        android:background="@color/switchDarkgrey" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/line_pic_selector"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_pic_library"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_darkgrey"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="라이브러리에서 가져오기"
+            android:textColor="@color/white_main"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_dialog_pic_take"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_darkgrey"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="카메라로 찍기"
+            android:textColor="@color/white_main"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

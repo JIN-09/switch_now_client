@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/switchDarkgrey"
+    android:orientation="vertical"
+    >
+
+    <ImageButton
+        android:id="@+id/profile_btn"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="#00ff0000"
+        android:scaleType="fitStart"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/circle_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/time_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_1"
+        android:textColor="@color/switchGrey"
+        android:textAlignment="center"
+        android:layout_above="@+id/time_2_button"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/time_1_button"
+        android:layout_alignStart="@+id/time_1_button"
+        android:layout_alignEnd="@+id/time_1_button" />
+
+    <TextView
+        android:id="@+id/time_2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_2"
+        android:textColor="@color/switchGrey"
+        android:textAlignment="center"
+        android:layout_above="@+id/time_2_button"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/time_2_button"
+        android:layout_alignStart="@+id/time_2_button"
+        android:layout_alignEnd="@+id/time_2_button" />
+
+
+
+    <TextView
+        android:id="@+id/time_3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_3"
+        android:textColor="@color/switchGrey"
+        android:textAlignment="center"
+        android:layout_below="@+id/time_3_button"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/time_3_button"
+        android:layout_alignStart="@+id/time_3_button"
+        android:layout_alignEnd="@+id/time_3_button" />
+
+    <TextView
+        android:id="@+id/time_4_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_4"
+        android:textColor="@color/switchGrey"
+        android:textAlignment="center"
+        android:layout_below="@+id/time_4_button"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/time_4_button"
+        android:layout_alignStart="@+id/time_4_button"
+        android:layout_alignEnd="@+id/time_4_button" />
+
+
+    <ToggleButton
+        android:id="@+id/time_1_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/time_checked"
+        android:textOn=""
+        android:textOff=""
+        android:text="@string/time_1"
+        android:rotation="-90"
+        android:scaleType="fitXY"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/profile_btn"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ToggleButton
+    android:id="@+id/time_2_button"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+        android:background="@drawable/time_checked"
+        android:textOn=""
+        android:textOff=""
+
+    android:scaleType="fitXY"
+
+        android:layout_marginEnd="12dp"
+        android:layout_alignBottom="@+id/time_1_button"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/time_1_button" />
+
+
+    <ToggleButton
+        android:id="@+id/time_3_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/time_checked"
+        android:rotation="90"
+        android:textOn=""
+        android:textOff=""
+        android:text="@string/time_2"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/time_2_button"
+        android:layout_alignRight="@+id/time_2_button"
+        android:layout_marginTop="112dp"/>
+
+
+    <ToggleButton
+        android:id="@+id/time_4_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/time_checked"
+        android:rotation="180"
+        android:textOn=""
+        android:textOff=""
+        android:text="@string/time_2"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/time_1_button"
+        android:layout_alignLeft="@+id/time_1_button"
+        android:layout_alignBottom="@+id/time_3_button"
+        android:layout_marginTop="115dp"/>
+
+
+    <ToggleButton
+        android:id="@+id/logo_white_toggle"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo_checked"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:textOn=""
+        android:textOff=""
+         />
+
+    <Button
+        android:id="@+id/start_btn_ready"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/time_3_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="95dp"
+        android:text="시간을 선택해주세요."
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="18dp"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message_pop_up_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/switchLime"
+        android:text="메시지 보내기"
+        android:textColor="@color/switchDarkgrey"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/message_pop_up_content"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/message_pop_up_text"
+        android:hint="보낼 메시지를 입력하세요."
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="18dp"
+        android:background="@color/white_main"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/switchDarkgrey"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/message_pop_up_content"
+        android:background="@color/white_main"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_darkgrey"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="취소"
+            android:textColor="@color/white_main"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btn_dialog_send"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="확인"
+            android:textColor="@color/switchDarkgrey"
+            android:textSize="17dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

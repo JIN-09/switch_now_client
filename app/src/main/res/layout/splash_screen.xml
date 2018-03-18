@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="10"
+    android:background="@color/switchDarkgrey"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="10"
+        android:src="@drawable/switch_logo" />
+
+    <TextView
+        android:id="@+id/poweredByText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/switchGrey"
+        android:gravity="bottom|center_horizontal|center"
+        android:text="Powered By Team Switch"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

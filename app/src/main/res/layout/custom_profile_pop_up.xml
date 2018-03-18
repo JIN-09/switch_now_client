@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/switchGrey"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_pop_up"
+        android:layout_marginTop="30dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/default_profile"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white_main"/>
+
+    <TextView
+        android:id="@+id/name_pop_up_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_pop_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="TEXT"
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/status_pop_up_proifle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_pop_up_profile"
+        android:layout_centerHorizontal="true"
+        android:text="status message"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/switchDarkgrey"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/status_pop_up_proifle"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:layout_weight="2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_darkgrey"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="확인"
+            android:textColor="@color/white_main"
+            android:textSize="17dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

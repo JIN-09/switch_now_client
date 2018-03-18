@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/switchDarkgrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kr.co.switchnow.switch_now_client.Activity.ConversationActivity_"
+    tools:showIn="@layout/app_bar_conversation_activity_">
+
+
+    <TextView
+        android:id="@+id/revCounter_conv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/switchGrey"
+        android:textSize="34dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_conv"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="296dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/revCounter_conv"
+        android:layout_centerHorizontal="true"
+
+        android:progressDrawable="@drawable/custom_progressbar" />
+
+
+    <TextView
+        android:id="@+id/time_end_conv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progress_bar_conv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/time_0"
+        android:textAlignment="center"
+        android:textColor="@color/switchGrey" />
+
+
+    <TextView
+        android:id="@+id/time_start_cov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_end_conv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/time_end_conv"
+        android:layout_marginRight="15dp"
+        android:text="00min."
+        android:textAlignment="center"
+        android:textColor="@color/switchGrey" />
+
+    <Space
+        android:id="@+id/blankspace_conv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar_conv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <ImageView
+        android:id="@+id/indicator_grey_conv"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/progress_bar_conv"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/blankspace_conv"
+        android:src="@drawable/page_indocator_grey" />
+
+    <ImageView
+        android:id="@+id/indicator_yellow_conv"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_below="@+id/progress_bar_conv"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/blankspace_conv"
+        android:src="@drawable/page_indicator_yellow" />
+
+
+    <ListView
+        android:id="@+id/conversation_switchOn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/indicator_grey_conv"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rounded"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="11.0sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="19dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="19dp" />
+
+    <TextView
+        android:id="@+id/conversation_Listview_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="대화 내용이 없습니다."
+        android:textColor="@color/black_main"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

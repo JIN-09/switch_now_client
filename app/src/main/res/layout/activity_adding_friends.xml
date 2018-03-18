@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/switchDarkgrey"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="kr.co.switchnow.switch_now_client.AddingFriendsActivity">
+
+    <TextView
+        android:id="@+id/add_friend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="친구추가"
+        android:textColor="@color/switchGrey"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tri_indicator_grey"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/add_friend_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:rotation="-90"
+        android:src="@drawable/tri_indicator" />
+
+    <TextView
+        android:id="@+id/navigation_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_friend_listview"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="시작하기를 눌러주세요."
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="32dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/add_friend_listview"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tri_indicator_grey"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/rounded"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="19dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="19dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/add_friend_listview"
+        android:layout_marginTop="-4dp"
+        android:background="@color/switchGrey">
+
+        <Button
+            android:id="@+id/save_friend_btn"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_darkgrey"
+            android:text="다음에 하기"
+            android:textColor="@color/switchGrey"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

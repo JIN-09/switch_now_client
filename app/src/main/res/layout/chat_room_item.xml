@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_room_list_item"
+    android:layout_width="320dp"
+    android:layout_height="90dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/item_rounded"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_listView_chat_room_list"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/default_profile"
+        app:civ_border_color="@color/white_main" />
+
+    <TextView
+        android:id="@+id/user_name_listView_chat_room_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/profile_image_listView_chat_room_list"
+        android:text="NAME"
+        android:textColor="@color/black_main"
+        android:textStyle="bold"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/last_message_listView_chat_room_list"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_listView_chat_room_list"
+        android:layout_alignLeft="@+id/user_name_listView_chat_room_list"
+        android:textColor="@color/black_main"
+        android:textSize="14dp"
+        android:text="마지막_메시지_내용"
+        />
+
+    <TextView
+        android:id="@+id/chat_room_updated_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="time"
+        android:textSize="14dp"
+        android:textColor="@color/switchDarkgrey"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/roomCheckedMark"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/chat_room_updated_timestamp"
+        android:layout_alignRight="@+id/chat_room_updated_timestamp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/check_mark_black"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>

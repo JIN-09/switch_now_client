@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/interaction_switchOn_layout"
+    android:layout_width="320dp"
+    android:layout_height="90dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="13dp"
+    android:paddingTop="13dp"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="11dp"
+    android:layout_marginTop="11dp"
+    android:background="@drawable/item_rounded"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_listView_interaction"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/default_profile"
+        app:civ_border_color="@color/white_main" />
+
+    <TextView
+        android:id="@+id/user_name_listView_interaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/profile_image_listView_interaction"
+        android:text="NAME"
+        android:textColor="@color/black_main"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/call_to_friend_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/call_to" />
+
+    <ImageView
+        android:id="@+id/message_to_friend_btn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/call_to_friend_btn"
+        android:src="@drawable/message_to" />
+
+
+
+
+</RelativeLayout>
+

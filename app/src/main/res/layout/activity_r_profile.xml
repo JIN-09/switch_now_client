@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/switchDarkgrey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_marginTop="30dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/default_profile"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white_main"/>
+
+    <ImageView
+        android:id="@+id/mini_camera_image"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/mini_camera"
+        />
+
+    <TextView
+        android:id="@+id/profile_name_text"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/profile_image"
+        android:textColor="@color/white_main"
+        android:text="name"
+        android:textSize="25dp"/>
+
+
+    <TextView
+        android:id="@+id/profile_name_disp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_alignLeft="@+id/profile_name_edit"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/profile_name_text"
+        android:textColor="@color/white_main"
+        android:text="Name"
+        android:textSize="16dp"/>
+
+  <EditText
+      android:id="@+id/profile_name_edit"
+      android:layout_width="310dp"
+      android:layout_height="40dp"
+      android:textSize="18dp"
+      android:paddingLeft="6dp"
+      android:inputType="text"
+      android:maxLines="1"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/profile_name_disp"
+      android:layout_marginTop="3dp"
+      android:background="@drawable/rounded"
+      />
+
+
+    <TextView
+        android:id="@+id/profile_status_disp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/profile_name_edit"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/profile_name_edit"
+        android:textColor="@color/white_main"
+        android:text="Status Message"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/profile_status_edit"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="상태 메시지를 입력해주세요."
+        android:paddingLeft="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_status_disp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/rounded"
+        />
+
+
+    <Button
+        android:id="@+id/save_profile_btn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_status_edit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="75dp"
+        android:text="저장하기"
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="18dp"
+        />
+
+
+
+</RelativeLayout>

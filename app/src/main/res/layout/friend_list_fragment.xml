@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kr.co.switchnow.switch_now_client.FriendListFragment"
+    android:background="@color/switchDarkgrey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+
+        android:id="@+id/indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/tri_indicator_grey"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:rotation="-90"
+            android:src="@drawable/tri_indicator" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/added_friend_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/indicator_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/rounded"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="14dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="14dp" />
+
+    <TextView
+        android:id="@+id/friendListMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록된 친구가 없습니다."
+        android:textColor="@color/black_main"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</RelativeLayout>
+

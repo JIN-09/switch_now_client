@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Switch</string>
+    <string name="app_package_name">kr.co.switchnow.switch_now_client</string>
+    <string name="facebook_app_id">1824559951145020</string>
+    <string name="google_map_api_key" templateMergeStrategy="preserve" translatable="false" >AIzaSyC3MyzOkIEZSoeXRYw_zcWyrOE_B42sKd8</string>
+
+    <string name="time_0">0min.</string>
+    <string name="time_1">15min.</string>
+    <string name="time_2">30min.</string>
+    <string name="time_3">45min.</string>
+    <string name="time_4">60min.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_on_and_interaction">SWITCH ON!</string>
+    <string name="title_activity_interaction">InteractionActivity</string>
+    <string name="title_activity_conversation_">ConversationActivity_</string>
+    <string name="title_activity_manage_friends">ManageFriendsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="tab_1">친구목록</string>
+    <string name="tab_2">차단목록</string>
+
+
+</resources>

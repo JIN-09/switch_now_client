@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="10"
+    android:background="@color/switchDarkgrey"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/switch_logo" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/fb_login_FAKE"-->
+    <!--android:layout_width="272dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="0dp"-->
+    <!--android:src="@drawable/fb_login"-->
+    <!--/>-->
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/fb_login"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+    <Button
+        android:id="@+id/register_with_email_btn"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_yellow"
+        android:layout_marginBottom="4dp"
+        android:shadowColor="@android:color/black"
+        android:gravity="center"
+        android:text="회원 가입하기"
+        android:textStyle="bold"
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/login_with_email_btn"
+        android:layout_width="272dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded"
+        android:shadowColor="@android:color/black"
+        android:text="로그인하기"
+        android:textStyle="bold"
+        android:textColor="@color/switchDarkgrey"
+        android:textSize="18dp" />
+
+
+
+</LinearLayout>

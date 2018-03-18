@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msg_item_timestamp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="10dp">
+
+
+
+
+    <TextView
+        android:id="@+id/msg_contents_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="timestamp"
+        android:textColor="@color/black_main"
+        android:background="@drawable/rounded"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        />
+
+
+    <View
+        android:id="@+id/msg_contents_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_main"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignBaseline="@+id/msg_contents_timestamp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>
